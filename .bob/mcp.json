@@ -1,0 +1,40 @@
+{
+  "mcpServers": {
+    "confluent": {
+      "command": "/Users/jmaya/.nvm/versions/node/v22.23.3/bin/node",
+      "args": [
+        "/Users/jmaya/.nvm/versions/node/v22.23.3/bin/mcp-confluent"
+      ],
+      "env": {
+        "CONFLUENT_CLOUD_API_KEY": "6UPISCRJTFR5OA6Z",
+        "CONFLUENT_CLOUD_API_SECRET": "cfltNSRFh+bsNBdvcz/YUpKqcMsNdG5Srh2Uff9hTyhnUkedz8nCE8I1N99O//Lg",
+        "KAFKA_API_KEY": "PA6VZHJ4GEEL3WRI",
+        "KAFKA_API_SECRET": "cflt1wMUR7uijIbx/gv/FJCS19tBuclC9/EOYlcjImkvugzRjKeQZX/tHq8s0o8g",
+        "BOOTSTRAP_SERVERS": "pkc-921jm.us-east-2.aws.confluent.cloud:9092",
+        "KAFKA_REST_ENDPOINT": "https://pkc-921jm.us-east-2.aws.confluent.cloud:443"
+      },
+      "disabled": false
+    },
+    "watsonx-orchestrate-adk-docs": {
+      "command": "/Users/jmaya/.local/bin/uvx",
+      "args": [
+        "mcp-proxy",
+        "--transport",
+        "streamablehttp",
+        "https://developer.watson-orchestrate.ibm.com/mcp"
+      ],
+      "timeout": 120000
+    },
+    "watsonx-orchestrate-adk": {
+      "command": "/Users/jmaya/.local/bin/uvx",
+      "args": [
+        "ibm-watsonx-orchestrate-mcp-server"
+      ],
+      "env": {
+        "WXO_MCP_WORKING_DIRECTORY": "/Users/jmaya/Dev/architecture/confluent-app",
+        "WXO_MCP_DEBUG": ""
+      },
+      "timeout": 120000
+    }
+  }
+}
